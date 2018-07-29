@@ -5,9 +5,22 @@
   font-family: 'Roboto', sans-serif;
 }
 
+/*MENU*/
+.navbar-nav {
+  align-items: flex-end !important;
+}
+
+.bg-light {
+  background-color: transparent !important;
+}
+
+.logo img{
+  width: 50px;
+}
+
 header {
   background-color: #fcf4f4;
-  padding: 1em 0;
+  /*padding: 1em 0; */
 }
 
 .menu {
@@ -47,8 +60,9 @@ header {
 }
 
 
+/*END MENU*/
 
-/* Slideshow  */
+/* SLIDESHOW  */
 .slideshow-container {
   max-width: 1400px;
   position: relative;
@@ -61,7 +75,13 @@ header {
 }
 
 .mySlides img {
-  height: 705px;
+  height: 280px;
+}
+
+
+.mySlides .text {
+  font-family: 'Alex Brush', cursive;
+  font-size: 2.5rem;
 }
 
 /* Next & previous buttons */
@@ -79,6 +99,10 @@ header {
   border-radius: 0 3px 3px 0;
 }
 
+a:not([href]):not([tabindex]) {
+  color: white !important;
+}
+
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -93,10 +117,22 @@ header {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  /*top: 350px;*/
+  bottom: 140px;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.text2 {
+  color: #f2f2f2;
+  padding: 8px 12px;
+  position: absolute;
+  /*top: 350px;*/
+  bottom: 50px;
+  font-size: 2rem;
   width: 100%;
   text-align: center;
 }
@@ -115,15 +151,15 @@ header {
   font-size: 6rem;
   padding: 8px 12px;
   position: absolute;
-  top: 700px;
+  top: 230px;
   width: 100%;
   text-align: center;
 }
 
 .dot {
   cursor: pointer;
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   /* margin: 0 2px; */
   background-color: #fff;
   border-radius: 50%;
@@ -131,8 +167,14 @@ header {
   transition: background-color 0.2s ease;
 }
 
+/*
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #0c8d1f;
+}
+*/
+
+.active {
+  background-color: #0c8d1f;
 }
 
 /* Fading animation */
@@ -153,10 +195,33 @@ header {
   to {opacity: 1}
 }
 
-
+/*END SLIDESHOW*/
 
 
 /*Section*/
+
+.croquis span {
+  animation: bounce 2s ease infinite;
+}
+/*
+@keyframes bounce {
+  50% {
+    transform: translateY(-20%); }
+  100% {
+    transform: translateY(0%); } }
+*/
+section {
+  margin: 2em 0;
+}
+
+.sponsors {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.sponsors h1 {
+  font-size: 2rem;
+}
 
 .croquis {
   display: flex;
@@ -165,9 +230,6 @@ header {
   align-items: center;
 }
 
-section {
-  margin: 2em 0;
-}
 
 .croquis button {
   background-color: #0c8d1f;
@@ -183,9 +245,31 @@ section {
   font-size: 3rem;
 }
 
-.sponsors-icons img {
-  width: 16%;
-  height: 10%;
-  outline: 1px solid red;
-  margin: 1em;
+.sponsors-icons {
+  text-align: center;
 }
+
+.sponsors-icons img {
+  width: 25%;
+  height: 10%;
+  margin: 0.6em;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #888888;
+  color: #fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+footer  i {
+  background-color: #fff;
+  color: #888888;
+  border-radius: 100%;
+  padding: 3px;
+  width: 20px;
+  text-align: center;
+}
+/*FOOTER END*/
