@@ -4,7 +4,7 @@ var sponsorsImg = [
   {src: "assets/logos/cdo.png"},
   {src: "assets/logos/circolo.png"},
   {src: "assets/logos/comites.png"},
-  {src: "assets/logos/Logo CCL.png"},
+  {src: "assets/logos/ccl.png"},
   {src: "assets/logos/lucani.png"},
   {src: "assets/logos/opere.png"},
   {src: "assets/logos/piazza-italia.png"},
@@ -40,7 +40,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 14000); // Change image every 2 seconds
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 
 //section sponsors

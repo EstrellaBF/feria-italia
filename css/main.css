@@ -14,13 +14,17 @@
   background-color: transparent !important;
 }
 
+.logo {
+  display: inline-block;
+}
+
 .logo img{
   width: 50px;
 }
 
 header {
   background-color: #fcf4f4;
-  /*padding: 1em 0; */
+  padding-top: 0.5em;
 }
 
 .menu {
@@ -59,6 +63,9 @@ header {
   margin-left: 0.5em;
 }
 
+.navbar-toggler {
+  float: right;
+}
 
 /*END MENU*/
 
@@ -126,16 +133,6 @@ a:not([href]):not([tabindex]) {
   text-align: center;
 }
 
-.text2 {
-  color: #f2f2f2;
-  padding: 8px 12px;
-  position: absolute;
-  /*top: 350px;*/
-  bottom: 50px;
-  font-size: 2rem;
-  width: 100%;
-  text-align: center;
-}
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -200,7 +197,7 @@ a:not([href]):not([tabindex]) {
 
 /*Section*/
 
-.croquis span {
+.arrow {
   animation: bounce 2s ease infinite;
 }
 /*
@@ -215,7 +212,7 @@ section {
 }
 
 .sponsors {
-  margin-bottom: 2em;
+  margin: 2em 0;
   text-align: center;
 }
 
@@ -223,13 +220,19 @@ section {
   font-size: 2rem;
 }
 
-.croquis {
+.croquis, .arrow {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .croquis button {
   background-color: #0c8d1f;
@@ -241,7 +244,7 @@ section {
   margin-bottom: 1em;
 }
 
-.croquis span i {
+.arrow i {
   font-size: 3rem;
 }
 
@@ -259,7 +262,7 @@ section {
 footer {
   background-color: #888888;
   color: #fff;
-  height: 50px;
+  height: 70px;
   display: flex;
   align-items: center;
 }
@@ -272,4 +275,91 @@ footer  i {
   width: 20px;
   text-align: center;
 }
+
+footer .social-network {
+  float: left !important;
+}
+
+footer .team {
+  float: right !important;
+}
 /*FOOTER END*/
+
+/*
+// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .mySlides img {
+    height: 350px;
+  }
+
+  .dots {
+    top: 280px;
+  }
+}
+
+
+/*
+// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+  header {
+    padding-top: 2em;
+  }
+
+  .menu ul li {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 0.5em;
+  } 
+
+  .mySlides img {
+    height: 500px;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+  
+  .dots {
+    top: 490px;
+  }
+
+  .text {
+    bottom: 315px;
+  }
+
+  .mySlides .text {
+    font-size: 3.2rem;
+  }
+}
+
+
+/*
+// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .logo img {
+    width: 100px;
+  }
+
+  .dots {
+    top: 675px;
+  }
+
+  .dot {
+    height: 25px;
+    width: 25px;
+  }
+  .mySlides img {
+    height: 700px;
+  }
+}
+
+
+
+@media (min-width: 1200px) {
+  /*HEADER*/
+  .mySlides img {
+    height: 700px;
+  }
+  /*HEADER*/
+}

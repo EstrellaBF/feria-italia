@@ -19,8 +19,8 @@
 
 <body>
 	<header>
-		<!--Mobile -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<!--Mobile, showing sm -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light   d-block d-sm-none 	 d-none d-sm-block d-md-none">
 
 			<div class="logo">
 				<img class="img-fluid" src="assets/logos/piazza-italia.png" alt="">
@@ -52,35 +52,42 @@
 		<!--Mobile end -->
 
 		<!--desktop-->
-		<!--
-		<div class="container">
-			<div class="row">
-				<div class="col-2">
-					<div class="logo">
-						<img class="img-fluid" src="assets/logos/piazza-italia.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="col-10">
-					<div class="menu">
-						<div>
-							<button><i class="fas fa-store"></i><span>Reserva un Stand</span></button>
-							<button><i class="fas fa-ticket-alt"></i><span>Compra entradas</span></button>
+		<!--hidden on xs, sm-->
+		<nav class="d-none  d-sm-none d-md-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-2">
+						<div class="logo">
+							<img class="img-fluid" src="assets/logos/piazza-italia.png" alt="">
 						</div>
-						<ul>
-							<li>Enogastronomía</li>
-							<li>|</li>
-							<li>Cultura y Arte</li>
-							<li>|</li>
-							<li>Innovación</li>
-							<li>|</li>
-							<li>Turismo</li>
-						</ul>
+					</div>
+
+					<div class="col-10">
+						<div class="menu">
+							<div>
+								<button>
+									<i class="fas fa-store"></i>
+									<span>Reserva un Stand</span>
+								</button>
+								<button>
+									<i class="fas fa-ticket-alt"></i>
+									<span>Compra entradas</span>
+								</button>
+							</div>
+							<ul>
+								<li>Enogastronomía</li>
+								<li>|</li>
+								<li>Cultura y Arte</li>
+								<li>|</li>
+								<li>Innovación</li>
+								<li>|</li>
+								<li>Turismo</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		-->
+		</nav>
 		<!--desktop end -->
 	</header>
 	<main>
@@ -91,7 +98,6 @@
 			<div class="mySlides ">
 				<img src="assets/images/vinos.jpg" style="width:100%">
 				<div class="text">Los mejores Vinos Italianos</div>
-				<div class="text2">La primera feria "made in Italia" hecho en Perú</div>
 			</div>
 
 			<div class="mySlides">
@@ -122,11 +128,13 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="croquis">
-						<button>Ver Croquis</button>
-						<span>
-							<i class="fas fa-angle-down"></i>
-						</span>
+						<button>Croquis</button>
 					</div>
+						<a class="arrow" href="#footer">
+							<span>
+								<i class="fas fa-angle-down"></i>
+							</span>
+						</a>
 				</div>
 
 				<div class="col-12">
@@ -152,11 +160,20 @@
 			</div>
 		</div>
 	</section>
-	<footer>
+	<footer id="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col 6">Encuentranos en : <i class="fab fa-facebook-f"></i></div>
-				<div class="col 6">Conoce al equipo</div>
+				<div class="col 6">
+					<div class="social-network">
+						Encuentranos en :
+						<i class="fab fa-facebook-f"></i>
+					</div>
+				</div>
+				<div class="col 6">
+					<div class="team">
+						Conoce al equipo
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>
