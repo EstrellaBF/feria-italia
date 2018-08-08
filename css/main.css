@@ -69,134 +69,23 @@ header {
 
 /*END MENU*/
 
-/* SLIDESHOW  */
-.slideshow-container {
-  max-width: 1400px;
-  position: relative;
-  margin: auto;
+
+/*Carousel*/
+.carousel-item img {
+  height: 260px;
 }
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-.mySlides img {
-  height: 280px;
-}
-
-
-.mySlides .text {
-  font-family: 'Alex Brush', cursive;
-  font-size: 2.5rem;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  /*transition: 0.6s ease;*/
-  border-radius: 0 3px 3px 0;
-}
-
-a:not([href]):not([tabindex]) {
-  color: white !important;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  padding: 8px 12px;
-  position: absolute;
-  /*top: 350px;*/
-  bottom: 140px;
-  font-size: 2rem;
-  width: 100%;
-  text-align: center;
-}
-
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dots {
-  font-size: 6rem;
-  padding: 8px 12px;
-  position: absolute;
-  top: 230px;
-  width: 100%;
-  text-align: center;
-}
-
-.dot {
-  cursor: pointer;
-  height: 20px;
-  width: 20px;
-  /* margin: 0 2px; */
-  background-color: #fff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.2s ease;
-}
-
-/*
-.active, .dot:hover {
-  background-color: #0c8d1f;
-}
-*/
-
-.active {
-  background-color: #0c8d1f;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .1} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .1} 
-  to {opacity: 1}
-}
-
-/*END SLIDESHOW*/
-
 
 /*Section*/
-
+/*
+section .container {
+  -webkit-box-shadow: 0px 0px 147px -13px rgba(18,53,77,0.33);
+  -moz-box-shadow: 0px 0px 147px -13px rgba(18,53,77,0.33);
+  box-shadow: 0px 0px 147px -13px rgba(18,53,77,0.33);
+}
+*/
+.croquis {
+  margin-top: 2.5em;
+}
 .arrow {
   animation: bounce 2s ease infinite;
 }
@@ -207,9 +96,6 @@ a:not([href]):not([tabindex]) {
   100% {
     transform: translateY(0%); } }
 */
-section {
-  margin: 2em 0;
-}
 
 .sponsors {
   margin: 2em 0;
@@ -235,7 +121,7 @@ section {
 }
 
 .croquis button {
-  background-color: #0c8d1f;
+  background-color: #0C8D1F;
   border: none;
   color: #fff;
   font-size: 1.2rem;
@@ -246,6 +132,7 @@ section {
 
 .arrow i {
   font-size: 3rem;
+  color: #0C8D1F;
 }
 
 .sponsors-icons {
@@ -285,11 +172,26 @@ footer .team {
 }
 /*FOOTER END*/
 
+
+/**/
+
+.restaurant {
+    /*height: 80vh;*/
+    margin-top: 2em;
+}
+.r-stilo {
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 1.2rem;
+}
+
+.bottonn {
+  float: right;
+}
 /*
 // Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-  .mySlides img {
-    height: 350px;
+  .carousel-item img {
+    height: 410px;
   }
 
   .dots {
@@ -312,24 +214,8 @@ footer .team {
     margin-left: 0.5em;
   } 
 
-  .mySlides img {
+  .carousel-item img {
     height: 500px;
-  }
-
-  .logo img {
-    width: 150px;
-  }
-  
-  .dots {
-    top: 490px;
-  }
-
-  .text {
-    bottom: 315px;
-  }
-
-  .mySlides .text {
-    font-size: 3.2rem;
   }
 }
 
@@ -340,16 +226,7 @@ footer .team {
   .logo img {
     width: 100px;
   }
-
-  .dots {
-    top: 675px;
-  }
-
-  .dot {
-    height: 25px;
-    width: 25px;
-  }
-  .mySlides img {
+  .carousel-item img {
     height: 700px;
   }
 }
@@ -358,7 +235,7 @@ footer .team {
 
 @media (min-width: 1200px) {
   /*HEADER*/
-  .mySlides img {
+  .carousel-item img {
     height: 700px;
   }
   /*HEADER*/
