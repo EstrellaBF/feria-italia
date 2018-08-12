@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
 	 crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i,900" rel="stylesheet">
@@ -16,7 +17,7 @@
 </head>
 
 <body>
-	<header>
+	<header id="top">
 		<div class="upper-nav">
 			<ul>
 				<li>
@@ -35,20 +36,6 @@
 		</div>
 		<!--Mobile, showing sm -->
 		<nav class="navbar mobile-menu navbar-expand-lg navbar-light  d-block d-sm-none d-none d-sm-block d-md-none">
-			<!--
-			<div class="mobile-main-button">
-				<button>
-					<span>Reserva un Stand</span>
-				</button>
-				<button>
-					<span>Compra entradas</span>
-				</button>
-			</div>
-			-->
-			<!--<a href="../index.html" class="logo">
-				<img class="img-fluid" src="assets/logos/piazza-italia.png" alt="">
-			</a>
-			<p id="countdown-mobile"></p>-->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
 			 aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -66,7 +53,7 @@
 				<ul class="navbar-nav">
 					<li class="nav-item">
 						<!--<li class="nav-item active">-->
-						<a class="nav-link" href="">Enogastronomía
+						<a class="nav-link" href="#foodLink">Enogastronomía
 							<span class="sr-only">(current)</span>
 						</a>
 					</li>
@@ -110,7 +97,7 @@
 							</div>
 							<ul>
 								<li class="nav-item">
-									<a href="views/restaurant.html">Enogastronomía</a>
+									<a href="#foodLink">Enogastronomía</a>
 								</li>
 								<li>|</li>
 								<li class="nav-item">
@@ -204,7 +191,7 @@
 
 -->
 	<!--Sobre la Feria-->
-	<section class="About">
+	<section class="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -215,28 +202,36 @@
 					</div>
 				</div>
 				<div class="col-12">
-					<div class="text-center">
-						<h3>Invitados Especiales</h3>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="text-center">
-						<h3>Stands</h3>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="text-center">
+					<div class="text-center auspiciadores">
 						<h3>Auspiciadores</h3>
 						<div class="sponsors-icons" id="sponsors-icons">
-							<img class="img-fluid" alt="" src="assets/logos/apavit.png">
-							<img class="img-fluid" alt="" src="assets/logos/cdo.png">
-							<img class="img-fluid" alt="" src="assets/logos/circolo.png">
-							<img class="img-fluid" alt="" src="assets/logos/comites.png">
-							<img class="img-fluid" alt="" src="assets/logos/ccl.png">
-							<img class="img-fluid" alt="" src="assets/logos/lucani.png">
-							<img class="img-fluid" alt="" src="assets/logos/opere.png">
-							<img class="img-fluid" alt="" src="assets/logos/piazza-italia.png">
-							<img class="img-fluid" alt="" src="assets/logos/ucss.png">
+							<a target="_blank" href="http://apavitperu.org/">
+								<img class="img-fluid" alt="apavit" src="assets/logos/apavit.png">
+							</a>
+							<a target="_blank" href="http://www.cdo.pe/">
+								<img class="img-fluid" alt="cdo" src="assets/logos/cdo.png">
+							</a>
+							<a target="_blank" href="https://web.facebook.com/CircoloPeru">
+								<img class="img-fluid" alt="circolo" src="assets/logos/circolo.png">
+							</a>
+							<a target="_blank" href="https://www.comites.pe/">
+								<img class="img-fluid" alt="comites" src="assets/logos/comites.png">
+							</a>
+							<a target="_blank" href="https://www.camaralima.org.pe/principal">
+								<img class="img-fluid" alt="ccl" src="assets/logos/ccl.png">
+							</a>
+							<a target="_blank" href="https://web.facebook.com/Associazione-dei-Lucani-in-Per%C3%B9-234594833226132/">
+								<img class="img-fluid" alt="lucani" src="assets/logos/lucani.png">
+							</a>
+							<a target="_blank" href="http://www.cdooperesociali.org/chi-siamo/cos-e-cdo-opere-sociali/">
+								<img class="img-fluid" alt="opere" src="assets/logos/opere.png">
+							</a>
+							<a target="_blank" href="">
+								<img class="img-fluid" alt="piazza-italia" src="assets/logos/piazza-italia.png">
+							</a>
+							<a target="_blank" href="https://www.ucss.edu.pe/">
+								<img class="img-fluid" alt="ucss" src="assets/logos/ucss.png">
+							</a>
 						</div>
 					</div>
 				</div>
@@ -255,7 +250,7 @@
 				</div>
 				<div class="col-6">
 					<div class="text-center why-div">
-						<img class="img-fluid" alt="" src="assets/logos/balloon.png">
+						<img class="img-fluid" alt="" src="assets/images/comunidad.png">
 						<p>Diviértete </p>
 					</div>
 				</div>
@@ -285,8 +280,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="text-center">
-						<h2>Programa</h2>
+					<div class="text-center evento-div">
+						<h3>Evento</h3>
+						<img class="img-fluid" alt="" src="assets/images/casa-prado2.png">
+						<p>La cámara de comercio de Lima - CCL y la Associazione Piazza Italiana organizan por 1era vez en el Perú la FERIA PIAZZA
+							ITALIA 2018.
+						</p>
 					</div>
 				</div>
 				<div class="col-12">
@@ -312,23 +311,7 @@
 					</div>
 				</div>
 				<div class="col-12">
-					<div class="text-center stands">
-						<h3>Stands</h3>
-						<p>50</p>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="text-center">
-						<h3>Expos</h3>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="text-center">
-						<h3>Demostraciones</h3>
-					</div>
-				</div>
-				<div class="col-12 croquis">
-					<div class="text-center">
+					<div class="text-center croquis">
 						<h3>Croquis</h3>
 						<div id="map"></div>
 					</div>
@@ -338,66 +321,153 @@
 	</section>
 
 	<!--Enogastronomía-->
-	<section class="Enogastronomia">
+	<section id="foodLink" class="Enogastronomia">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="text-center why-div">
+					<div class="text-center">
 						<h2>Enogastronomía</h2>
 						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
 					</div>
 				</div>
-				<div class="col-12">
-					<div class="text-center why-div">
+				<div class="col-6">
+					<div class="text-center stands-list">
 						<img class="img-fluid" alt="" src="assets/logos/balloon.png">
 						<h4>Vinos</h4>
 						<ul id="wine-list">
 							<li>Emp. Vino 1</li>
 							<li>Emp. Vino 2</li>
 							<li>Emp. Vino 3 </li>
+							<div class="collapse" id="whine-list-toggle">
+								<li>Emp. Vino 1</li>
+								<li>Emp. Vino 2</li>
+								<li>Emp. Vino 3 </li>
+							</div>
 						</ul>
-						<button>Ver más</button>
+						<button class="see-more" type="button" data-toggle="collapse" data-target="#whine-list-toggle" aria-expanded="false"
+						 aria-controls="collapseExample">Ver más
+							<i class="fas fa-caret-down"></i>
+						</button>
 					</div>
 				</div>
-				<div class="col-12">
-					<div class="text-center why-div">
+				<div class="col-6">
+					<div class="text-center stands-list">
 						<img class="img-fluid" alt="" src="assets/logos/family.png">
 						<h4>Gastronomía</h4>
 						<ul id="food-list">
 							<li>Emp. Gastronomía1</li>
 							<li>Emp. Gastronomía2</li>
 							<li>Emp. Gastronomía3</li>
+							<div class="collapse" id="food-list-toggle">
+								<li>Emp. Gastronomía1</li>
+								<li>Emp. Gastronomía2</li>
+								<li>Emp. Gastronomía3</li>
+							</div>
 						</ul>
-						<button>Ver más</button>
+						<button class="see-more" type="button" data-toggle="collapse" data-target="#food-list-toggle" aria-expanded="false"
+						 aria-controls="collapseExample">Ver más
+							<i class="fas fa-caret-down"></i>
+						</button>
 					</div>
 				</div>
-				<div class="col-12">
-					<div class="text-center why-div">
+				<div class="col-6">
+					<div class="text-center stands-list">
 						<img class="img-fluid" alt="" src="assets/logos/diagram.png">
 						<h4>Postres</h4>
 						<ul id="desserts-list">
 							<li>Emp. Postre1</li>
 							<li>Emp. Postre2</li>
 							<li>Emp. Postre3</li>
+							<div class="collapse" id="desserts-list-toggle">
+								<li>Emp. Postre3</li>
+								<li>Emp. Postre2</li>
+								<li>Emp. Postre3</li>
+							</div>
 						</ul>
-						<button>Ver más</button>
+						<button class="see-more" type="button" data-toggle="collapse" data-target="#desserts-list-toggle" aria-expanded="false"
+						 aria-controls="collapseExample">Ver más
+							<i class="fas fa-caret-down"></i>
+						</button>
 					</div>
 				</div>
-				<div class="col-12">
-					<div class="text-center why-div">
+				<div class="col-6">
+					<div class="text-center stands-list">
 						<img class="img-fluid" alt="" src="assets/logos/pos.png">
 						<h4>Bebidas</h4>
 						<ul id="beverage-list">
 							<li>Em. Bebida 1</li>
 							<li>Em. Bebida 2</li>
 							<li>Em. Bebida 3</li>
+							<div class="collapse" id="beverage-list-toggle">
+								<li>Em. Bebida 1</li>
+								<li>Em. Bebida 2</li>
+								<li>Em. Bebida 3</li>
+							</div>
 						</ul>
-						<button>Ver más</button>
+						<button class="see-more" type="button" data-toggle="collapse" data-target="#beverage-list-toggle" aria-expanded="false"
+						 aria-controls="collapseExample">Ver más
+							<i class="fas fa-caret-down"></i>
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<!--Contáctanos-->
+	<section class="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="text-center register-div">
+						<h2>Regístrate</h2>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="text-rigth register-info">
+						<p><i class="fas fa-check"></i>En la cámara de comercio de Lima</p>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="text-rigth register-info">
+						<p><i class="fas fa-check"></i>Suscríbete con tu correo:</p>
+						<input type="text">
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="text-center contactanos-div">
+						<h2>Contáctanos</h2>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="contact-info">
+						<i class="fas fa-envelope-open"></i>
+						<span>emanuelapelligro@gmail.com</span>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="contact-info">
+						<i class="fas fa-mobile-alt"></i>
+						<span>99999999</span>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="contact-info">
+						<i class="fas fa-users"></i>
+						<span>Equipo</span>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="arrow">
+						<a href="#top">
+							<i class="fas fa-angle-down"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 	<!--Footer-->
 	<footer id="footer">
@@ -418,13 +488,16 @@
 		</div>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	 crossorigin="anonymous"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKBRMz3C6COgaTDm-EuUh0Tk8-vCNNCXI&callback=initMap" async
 	 defer></script>
-	 <script src="js/map.js"></script>
-	 <script src="js/app.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/app.js"></script>
 </body>
 
 </html>

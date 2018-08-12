@@ -19,14 +19,11 @@ $('.carousel').carousel()
 window.onscroll = function () {
   //var scroll = window.scrollTop();
   var scroll = document.documentElement.scrollTop || document.body.scrollTop;
-  console.log(scroll);
+  //console.log(scroll);
   if (scroll > 640) {
-    console.log('supera a 630');
-    //$menuHome.css('visibility', 'visible');
-    // $menuHome.addClass('menu-home');
+    //console.log('supera a 630');
   } else {
-    console.log('no supera');
-    // $menuHome.hide();
+    //console.log('no supera');
   }
 };
 
@@ -104,3 +101,9 @@ var random = Math.floor(Math.random()*3);
 newWine.push(random);
 
 console.log(newWine);
+
+  $('.list-toggle').hide();
+$('.list-button').on('click', function(){
+  console.log($(this));
+
+});

@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'Lucida Bright';
+  src: url('LucidaBright-Italic.eot');
+  src: url('LucidaBright-Italic.eot?#iefix') format('embedded-opentype'),
+      url('LucidaBright-Italic.woff2') format('woff2'),
+      url('LucidaBright-Italic.woff') format('woff'),
+      url('LucidaBright-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,6 +16,13 @@
   font-family: 'Roboto', sans-serif;
 }
 
+
+/*
+font-family: 'Lucida Bright';
+font-weight: normal;
+font-style: italic;
+
+*/
 /*MENU*/
 /*
 .navbar-nav {
@@ -15,11 +33,25 @@
 }
 */
 
+h2, h3, h4 {
+  font-family: 'Lucida Bright';
+  font-style: italic;
+  font-weight: 400;
+}
+
+.about, .porque-ir, .programa, .Enogastronomia {
+  padding: 3em 0;
+}
+
+.contact {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
 
 .upper-nav {
   background-color: #000;
   color: #fff;
-  border-top: 3px solid #0C963F;
+  border-top: 4px solid #0C963F;
   padding: 0.2em;
   font-size: 0.9rem;
 }
@@ -38,10 +70,12 @@
 }
 
 header nav{
-  background-color: #fcf4f4;
+  background-color: #fff;
 }
 
 header .mobile-menu {
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
 }
 
 .mobile-main-button {
@@ -54,19 +88,26 @@ header .mobile-menu {
 }
 
 .mobile-main-button button {
-  background-color: #0c8d1f;
+  background-color: #fff;
   border: none;
   border-radius: 0.2em;
-  color: #ffffff;
+  color: #5f5f5f;
   cursor: pointer;
   float: right;
   font-size: 0.9rem;
+  font-weight: 500;
   margin-right: 0.3em;
   margin-top: 0.5em;
   padding: 0 0.4em;
   /* margin-right: 0.8em; */
   /* width: 38%; */
   /* border-bottom: 1px solid green; */
+  /* margin-right: 0.8em; */
+  /* width: 38%; */
+  /* border-bottom: 1px solid green; */
+  -webkit-box-shadow: 6px 5px 10px -7px rgba(47, 44, 44, 0.65);
+    -moz-box-shadow: 6px 5px 10px -7px rgba(47, 44, 44, 0.65);
+    box-shadow: 6px 5px 10px -7px rgba(47, 44, 44, 0.65);
 }
 
 
@@ -155,9 +196,25 @@ header .mobile-menu {
   height: 260px;
 }
 
+.carousel-caption {
+  position: absolute;
+  /* right: 15%; */
+  bottom: 1px;
+  left: 0%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  /* outline: 1px solid red; */
+  width: 100%;
+  /* opacity: 5; */
+  background-color: #50505066;
+}
 .carousel-caption h3 {
-  font-family: 'Petit Formal Script', cursive;
-  font-weight: 700;
+  font-family: 'Lucida Bright';
+  font-style: italic;
+  font-weight: 400;
 }
 
 .sponsors {
@@ -181,15 +238,28 @@ header .mobile-menu {
 }
 
 /*Sobre la Feria*/
+section.about {
+  border-top: 4px solid #CB2F2F;
+} 
+
+.auspiciadores {
+  margin-top: 2.5em;
+}
 
 /*Porque ir*/
+.why-div {
+  /* width: 80%; */
+  margin-top: 2em;
+}
+
 .why-div ul {
   list-style: none;
 }
 
 .why-div img {
-  width: 25%;
   display: inline-block;
+  border-radius: 50%;
+  width: 60%;
 }
 
 /*
@@ -213,12 +283,19 @@ header .mobile-menu {
   color: #fff;
 }
 
-.calendar {
-  margin: 0 3em;
+.evento-div, .calendar, .croquis {
+  margin-bottom: 3.5em;
 }
+
+.evento-div img {
+  border-radius: 50%;
+  width: 60%;
+}
+
 
 .fecha-div {
   background-color: #fff;
+  margin: 0 3em;
 }
 
 .fecha-div h4{
@@ -259,20 +336,87 @@ header .mobile-menu {
   width: 100%;  /* The width is the width of the web page */
  }
 
+
+ /*Enogastronomia*/
+
+.stands-list ul {
+  list-style: none;
+}
+
+.stands-list {
+  margin-bottom: 4em;
+}
+
+/*
+.stands-list button {
+  background-color: transparent;
+  border: none;
+}
+*/
+
+/*Contacto*/
+.register-info {
+  padding: 0.2em 2em;
+}
+
+.register-info i {
+  margin-right: 1em;
+}
+
+.contact {
+  background-color: #CBD7DE;
+}
+
+.contact-info {
+  /* display: flex; */
+  /* flex-direction: row; */
+  padding: 0.2em 2em;
+}
+
+.contact-info i {
+  width: 12%;
+}
+
+.contactanos-div {
+  margin-top: 3em;
+}
+
+.see-more {
+  background-color: #0c8d1f00;
+  color: #14375A;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0 1em;
+  border-radius: 7px;
+  font-weight: 500;
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.arrow i {
+  font-size: 3rem;
+  color: #0C8D1F;
+}
+
+
 /*FOOTER*/
 footer {
-  background-color: #888888;
+  background-color: #000;
   color: #fff;
   height: 70px;
   display: flex;
   align-items: center;
-  
-  margin-top: 2em;
 }
 
 footer  i {
   background-color: #fff;
-  color: #888888;
+  color: #000;
   border-radius: 100%;
   padding: 3px;
   width: 20px;
@@ -287,6 +431,9 @@ footer .team {
   float: right !important;
 }
 /*FOOTER END*/
+
+
+
 
 
 
