@@ -259,7 +259,7 @@ section.about {
 .why-div img {
   display: inline-block;
   border-radius: 50%;
-  width: 60%;
+  width: 50%;
 }
 
 /*
@@ -289,7 +289,7 @@ section.about {
 
 .evento-div img {
   border-radius: 50%;
-  width: 60%;
+  width: 50%;
 }
 
 
@@ -332,7 +332,7 @@ section.about {
 }
 
 #map {
-  height: 400px;  /* The height is 400 pixels */
+  height: 250px;  /* The height is 400 pixels */
   width: 100%;  /* The width is the width of the web page */
  }
 
@@ -455,7 +455,9 @@ footer .team {
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
-
+  .fecha-div {
+    margin: 0 0.5em;
+  }
   /*
   .menu ul li {
     display: inline-block;
