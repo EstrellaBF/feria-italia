@@ -8,34 +8,66 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	 crossorigin="anonymous">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
 	 crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Alex+Brush|Bilbo+Swash+Caps" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
-	 crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
 </head>
 
 <body>
 	<header>
+		<div class="upper-nav">
+			<ul>
+				<li>
+					Suscríbete
+				</li>
+				<li>
+					Contáctanos
+				</li>
+				<li>
+					Promociones
+				</li>
+				<li>
+					<i class="fab fa-facebook-f"></i>
+				</li>
+			</ul>
+		</div>
 		<!--Mobile, showing sm -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light   d-block d-sm-none 	 d-none d-sm-block d-md-none">
-			<a href="../index.html" class="logo">
+		<nav class="navbar mobile-menu navbar-expand-lg navbar-light  d-block d-sm-none d-none d-sm-block d-md-none">
+			<!--
+			<div class="mobile-main-button">
+				<button>
+					<span>Reserva un Stand</span>
+				</button>
+				<button>
+					<span>Compra entradas</span>
+				</button>
+			</div>
+			-->
+			<!--<a href="../index.html" class="logo">
 				<img class="img-fluid" src="assets/logos/piazza-italia.png" alt="">
 			</a>
+			<p id="countdown-mobile"></p>-->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
 			 aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
+
+			<div class="mobile-main-button">
+				<button>
+					<span>Reserva un Stand</span>
+				</button>
+				<button>
+					<span>Compra entradas</span>
+				</button>
+			</div>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item">
 						<!--<li class="nav-item active">-->
-						<a class="nav-link" href="views/restaurant.html">Enogastronomía
+						<a class="nav-link" href="">Enogastronomía
 							<span class="sr-only">(current)</span>
 						</a>
 					</li>
@@ -54,13 +86,15 @@
 		<!--Mobile end -->
 		<!--desktop-->
 		<!--hidden on xs, sm-->
-		<nav class="d-none  d-sm-none d-md-block">
+		<nav class="d-none  d-sm-none d-md-block menu-desktop">
 			<div class="container">
 				<div class="row">
 					<div class="col-2">
 						<a href="../index.html" class="logo">
 							<img class="img-fluid" src="assets/logos/piazza-italia.png" alt="">
 						</a>
+
+						<p id="countdown-desktop"></p>
 					</div>
 
 					<div class="col-10">
@@ -76,13 +110,21 @@
 								</button>
 							</div>
 							<ul>
-								<li class="nav-item"><a href="views/restaurant.html">Enogastronomía</a></li>
+								<li class="nav-item">
+									<a href="views/restaurant.html">Enogastronomía</a>
+								</li>
 								<li>|</li>
-								<li class="nav-item"><a>Cultura y Arte</a></li>
+								<li class="nav-item">
+									<a>Cultura y Arte</a>
+								</li>
 								<li>|</li>
-								<li class="nav-item"><a>Innovación</a></li>
+								<li class="nav-item">
+									<a>Innovación</a>
+								</li>
 								<li>|</li>
-								<li class="nav-item"><a>Turismo</a></li>
+								<li class="nav-item">
+									<a>Turismo</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -124,8 +166,8 @@
 		</div>
 	</main>
 
-	<div ng-view></div>
-	<section>
+	<!--Croquis-->
+	<section class="croquis">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -138,8 +180,6 @@
 						</span>
 					</a>
 				</div>
-
-
 				<!-- Modal -->
 				<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 					<div class="modal-dialog modal-dialog-centered" role="document">
@@ -160,29 +200,125 @@
 					</div>
 				</div>
 
-
-
-				<div class="col-12">
-					<div class="sponsors" id="sponsors-div">
-						<h1>AUSPICIADORES</h1>
-					</div>
-
-					<div class="sponsors-icons" id="sponsors-icons">
-						<img class="img-fluid" alt="" src="assets/logos/apavit.png">
-						<img class="img-fluid" alt="" src="assets/logos/cdo.png">
-						<img class="img-fluid" alt="" src="assets/logos/circolo.png">
-						<img class="img-fluid" alt="" src="assets/logos/comites.png">
-						<img class="img-fluid" alt="" src="assets/logos/ccl.png">
-						<img class="img-fluid" alt="" src="assets/logos/lucani.png">
-						<img class="img-fluid" alt="" src="assets/logos/opere.png">
-						<img class="img-fluid" alt="" src="assets/logos/piazza-italia.png">
-						<img class="img-fluid" alt="" src="assets/logos/ucss.png">
-					</div>
-				</div>
-
 			</div>
 		</div>
 	</section>
+	<!--Sobre la Feria-->
+	<section class="About">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="text-center">
+						<h2>La primera feria italiana</h2>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim aspernatur hic exercitationem aut eligendi id quia fugiat
+							cupiditate numquam, voluptates blanditiis sequi repellendus modi nostrum assumenda officiis? Inventore, quas et!</p>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="text-center">
+						<h3>Invitados Especiales</h3>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="text-center">
+						<h3>Stands</h3>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="text-center">
+						<h3>Auspiciadores</h3>
+						<div class="sponsors-icons" id="sponsors-icons">
+							<img class="img-fluid" alt="" src="assets/logos/apavit.png">
+							<img class="img-fluid" alt="" src="assets/logos/cdo.png">
+							<img class="img-fluid" alt="" src="assets/logos/circolo.png">
+							<img class="img-fluid" alt="" src="assets/logos/comites.png">
+							<img class="img-fluid" alt="" src="assets/logos/ccl.png">
+							<img class="img-fluid" alt="" src="assets/logos/lucani.png">
+							<img class="img-fluid" alt="" src="assets/logos/opere.png">
+							<img class="img-fluid" alt="" src="assets/logos/piazza-italia.png">
+							<img class="img-fluid" alt="" src="assets/logos/ucss.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Porque ir-->
+	<section class="porque-ir">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="text-center why-div">
+						<h2>¿Porqué participar?</h2>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="text-center why-div">
+						<img class="img-fluid" alt="" src="assets/logos/balloon.png">
+						<p>Diviértete </p>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="text-center why-div">
+						<span><img class="img-fluid" alt="" src="assets/logos/family.png"></span>
+						<p>Pasa un momento en familia</p>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="text-center why-div">
+						<img class="img-fluid" alt="" src="assets/logos/diagram.png">
+						<p>Aumenta la visibilidad de tu negocio</p>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="text-center why-div">
+						<img class="img-fluid" alt="" src="assets/logos/pos.png">
+						<p>Aumenta tus ingresos</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Programa-->
+	<section class="programa">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="text-center">
+						<h2>Programa</h2>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="text-center">
+						<h3>Fecha</h3>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="text-center">
+						<h3>Stands</h3>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="text-center">
+						<h3>Expos</h3>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="text-center">
+						<h3>Demostraciones</h3>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="text-center">
+						<h3>Croquis</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Footer-->
 	<footer id="footer">
 		<div class="container">
 			<div class="row">
