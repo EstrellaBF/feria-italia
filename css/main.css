@@ -160,29 +160,6 @@ header .mobile-menu {
   font-weight: 700;
 }
 
-
-/*Croquis*/
-/*
-section .container {
-  -webkit-box-shadow: 0px 0px 147px -13px rgba(18,53,77,0.33);
-  -moz-box-shadow: 0px 0px 147px -13px rgba(18,53,77,0.33);
-  box-shadow: 0px 0px 147px -13px rgba(18,53,77,0.33);
-}
-*/
-.croquis {
-  margin-top: 2.5em;
-}
-.arrow {
-  animation: bounce 2s ease infinite;
-}
-/*
-@keyframes bounce {
-  50% {
-    transform: translateY(-20%); }
-  100% {
-    transform: translateY(0%); } }
-*/
-
 .sponsors {
   margin: 2em 0;
   text-align: center;
@@ -192,34 +169,6 @@ section .container {
   font-size: 2rem;
 }
 
-.croquis, .arrow {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.arrow {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.croquis button {
-  background-color: #0C8D1F;
-  border: none;
-  color: #fff;
-  font-size: 1.2rem;
-  padding: 0.3em 1.5em;
-  border-radius: 0.2em;
-  margin-bottom: 1em;
-}
-
-.arrow i {
-  font-size: 3rem;
-  color: #0C8D1F;
-}
 
 .sponsors-icons {
   text-align: center;
@@ -234,11 +183,16 @@ section .container {
 /*Sobre la Feria*/
 
 /*Porque ir*/
+.why-div ul {
+  list-style: none;
+}
+
 .why-div img {
   width: 25%;
   display: inline-block;
 }
 
+/*
 .why-div span::after {
   content: " ";
   display: inline-block;
@@ -248,15 +202,63 @@ section .container {
   margin-bottom: 10px;
   vertical-align: top;
 }
-.why-div span::before {
-  content: " ";
-  display: inline-block;
-  width: 35%;
-  height: 5px;
-  background: green;
-  margin-bottom: 10px;
-  vertical-align: top;
+*/
+
+/*programa*/
+.programa {
+  background-color: #14375a;
 }
+
+.programa h2, .programa h3{
+  color: #fff;
+}
+
+.calendar {
+  margin: 0 3em;
+}
+
+.fecha-div {
+  background-color: #fff;
+}
+
+.fecha-div h4{
+  border-bottom: 1px solid #000;
+  margin: 0;
+}
+
+.dias {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dia1, .dia2 {
+  border-right: 1px solid #000;
+}
+
+.dia1, .dia2, .dia3  {
+  width: 100%;
+}
+
+.dia1 p, .dia2 p, .dia3 p {
+  margin: 0;
+}
+
+
+.dia1 p:last-child, .dia2 p:last-child, .dia3 p:last-child {
+  font-size: 2rem;
+}
+
+.stands p {
+  font-size: 2rem;
+  color: #fff;
+}
+
+#map {
+  height: 400px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+ }
+
 /*FOOTER*/
 footer {
   background-color: #888888;

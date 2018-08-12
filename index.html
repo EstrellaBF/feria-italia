@@ -6,8 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
 	 crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i,900" rel="stylesheet">
@@ -166,7 +165,7 @@
 		</div>
 	</main>
 
-	<!--Croquis-->
+	<!--Croquis
 	<section class="croquis">
 		<div class="container">
 			<div class="row">
@@ -180,7 +179,6 @@
 						</span>
 					</a>
 				</div>
-				<!-- Modal -->
 				<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 					<div class="modal-dialog modal-dialog-centered" role="document">
 						<div class="modal-content">
@@ -203,6 +201,8 @@
 			</div>
 		</div>
 	</section>
+
+-->
 	<!--Sobre la Feria-->
 	<section class="About">
 		<div class="container">
@@ -261,7 +261,7 @@
 				</div>
 				<div class="col-6">
 					<div class="text-center why-div">
-						<span><img class="img-fluid" alt="" src="assets/logos/family.png"></span>
+						<img class="img-fluid" alt="" src="assets/logos/family.png">
 						<p>Pasa un momento en familia</p>
 					</div>
 				</div>
@@ -290,13 +290,31 @@
 					</div>
 				</div>
 				<div class="col-12">
-					<div class="text-center">
+					<div class="text-center calendar">
 						<h3>Fecha</h3>
+						<div class="fecha-div">
+							<h4>Noviembre</h4>
+							<div class="dias">
+								<div class="dia1">
+									<p>Viernes</p>
+									<p>23</p>
+								</div>
+								<div class="dia2">
+									<p>Sábado</p>
+									<p>24</p>
+								</div>
+								<div class="dia3">
+									<p>Sábado</p>
+									<p>25</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-12">
-					<div class="text-center">
+					<div class="text-center stands">
 						<h3>Stands</h3>
+						<p>50</p>
 					</div>
 				</div>
 				<div class="col-12">
@@ -309,9 +327,72 @@
 						<h3>Demostraciones</h3>
 					</div>
 				</div>
-				<div class="col-12">
+				<div class="col-12 croquis">
 					<div class="text-center">
 						<h3>Croquis</h3>
+						<div id="map"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Enogastronomía-->
+	<section class="Enogastronomia">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="text-center why-div">
+						<h2>Enogastronomía</h2>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="text-center why-div">
+						<img class="img-fluid" alt="" src="assets/logos/balloon.png">
+						<h4>Vinos</h4>
+						<ul id="wine-list">
+							<li>Emp. Vino 1</li>
+							<li>Emp. Vino 2</li>
+							<li>Emp. Vino 3 </li>
+						</ul>
+						<button>Ver más</button>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="text-center why-div">
+						<img class="img-fluid" alt="" src="assets/logos/family.png">
+						<h4>Gastronomía</h4>
+						<ul id="food-list">
+							<li>Emp. Gastronomía1</li>
+							<li>Emp. Gastronomía2</li>
+							<li>Emp. Gastronomía3</li>
+						</ul>
+						<button>Ver más</button>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="text-center why-div">
+						<img class="img-fluid" alt="" src="assets/logos/diagram.png">
+						<h4>Postres</h4>
+						<ul id="desserts-list">
+							<li>Emp. Postre1</li>
+							<li>Emp. Postre2</li>
+							<li>Emp. Postre3</li>
+						</ul>
+						<button>Ver más</button>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="text-center why-div">
+						<img class="img-fluid" alt="" src="assets/logos/pos.png">
+						<h4>Bebidas</h4>
+						<ul id="beverage-list">
+							<li>Em. Bebida 1</li>
+							<li>Em. Bebida 2</li>
+							<li>Em. Bebida 3</li>
+						</ul>
+						<button>Ver más</button>
 					</div>
 				</div>
 			</div>
@@ -336,13 +417,14 @@
 			</div>
 		</div>
 	</footer>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	 crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-	 crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-	 crossorigin="anonymous"></script>
-	<script src="js/app.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKBRMz3C6COgaTDm-EuUh0Tk8-vCNNCXI&callback=initMap" async
+	 defer></script>
+	 <script src="js/map.js"></script>
+	 <script src="js/app.js"></script>
 </body>
 
 </html>

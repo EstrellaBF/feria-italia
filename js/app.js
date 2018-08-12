@@ -31,15 +31,15 @@ window.onscroll = function () {
 };
 
 
- //Fechas inicial y final
- /*
- var d = new Date();
+//Fechas inicial y final
+/*
+var d = new Date();
 console.log(d.getMonth() +1);
 
- document.getElementById("fecha").append(`${ - (d.getMonth() +1)}`)
- */
+document.getElementById("fecha").append(`${ - (d.getMonth() +1)}`)
+*/
 
-var end = new Date('08/13/2018 9:30 AM');
+var end = new Date('11/23/2018 9:30 AM');
 
 var _second = 1000;
 var _minute = _second * 60;
@@ -48,29 +48,59 @@ var _day = _hour * 24;
 var timer;
 
 //function showRemaining() {
-    var now = new Date();
-    var distance = end - now;
-    /*
-    if (distance < 0) {
+var now = new Date();
+var distance = end - now;
+/*
+if (distance < 0) {
 
-        clearInterval(timer);
-        document.getElementById('countdown').innerHTML = 'EXPIRED!';
+    clearInterval(timer);
+    document.getElementById('countdown').innerHTML = 'EXPIRED!';
 
-        return;
-    }
-    */
-    var days = Math.floor(distance / _day);
-    var hours = Math.floor((distance % _day) / _hour);
-    var minutes = Math.floor((distance % _hour) / _minute);
-    var seconds = Math.floor((distance % _minute) / _second);
+    return;
+}
+*/
+var days = Math.floor(distance / _day);
+var hours = Math.floor((distance % _day) / _hour);
+var minutes = Math.floor((distance % _hour) / _minute);
+var seconds = Math.floor((distance % _minute) / _second);
 
-    console.log(days)
-    //document.getElementById('countdown-mobile').innerHTML = 'Faltan ' + days + ' dias, ';
-    //document.getElementById('countdown-mobile').innerHTML += hours + ' horas, ';
-    document.getElementById('countdown-desktop').innerHTML = 'Faltan ' + days + ' dias, ';
-    document.getElementById('countdown-desktop').innerHTML += hours + ' horas, ';
-    //document.getElementById('countdown').innerHTML += minutes + ' minutos y ';
-    //document.getElementById('countdown').innerHTML += seconds + ' segundos';
+//document.getElementById('countdown-mobile').innerHTML = 'Faltan ' + days + ' dias, ';
+//document.getElementById('countdown-mobile').innerHTML += hours + ' horas, ';
+document.getElementById('countdown-desktop').innerHTML = 'Faltan ' + days + ' dias, ';
+document.getElementById('countdown-desktop').innerHTML += hours + ' horas, ';
+//document.getElementById('countdown').innerHTML += minutes + ' minutos y ';
+//document.getElementById('countdown').innerHTML += seconds + ' segundos';
 //}
 
 //timer = setInterval(showRemaining);
+
+/*´´EMPRESAS LIST ARRAY */
+const wine = ['Vino1', 'Vino2', 'Vino3', 'Vino4', 'Vino5', 'Vino6'];
+const food = ['Comida1', 'Comida2', 'Comida3', 'Comida4', 'Comida5', 'Comida6'];
+const desserts = ['postres1', 'postres2', 'postres3', 'postres4', 'postres5', 'postres6'];
+const beverage = ['bebidas1', 'bebidas2', 'bebidas3', 'bebidas4', 'bebidas5', 'bebidas6'];
+
+var newWine = [];
+var random = Math.floor(Math.random()*3);
+/*
+$('#desserts-list').append(`<ul>
+    ${wine[random]}
+    </ul>`
+);*/
+newWine.push(random);
+
+var random = Math.floor(Math.random()*3);
+/*$('#desserts-list').append(`<ul>
+    ${wine[random]}
+    </ul>`
+);*/
+newWine.push(random);
+
+var random = Math.floor(Math.random()*3);
+/*$('#desserts-list').append(`<ul>
+    ${wine[random]}
+    </ul>`
+);*/
+newWine.push(random);
+
+console.log(newWine);
