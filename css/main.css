@@ -115,6 +115,13 @@ header .mobile-menu {
   display: inline-block;
 }
 
+.logo-desktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu {
   float: right;
   height: 100%;
@@ -283,6 +290,14 @@ section.about {
   background-color: #027235;
 }
 
+.programa-title {
+  margin-bottom: 2.5em;
+}
+
+.programa-title p {
+  color: #fff;
+}
+
 .programa h2, .programa h3{
   color: #fff;
 }
@@ -362,14 +377,37 @@ section.about {
 }
 
 .register-info input {
+  background-color: #0C8D1F;
   border: none;
-  border-bottom: 1px solid #858e87;
-  border-radius: 5px;
+  border-bottom: 2px solid #fff;
+  color:#fff;
+  font-size: 1.1rem;
   width: 100%;
 }
 
+
+.register-info input::-webkit-input-placeholder { 
+  color: #fff; 
+}
+
+.register-info input::-moz-placeholder { 
+  color: #fff; 
+}
+
+.register-info input::-ms-input-placeholder { 
+  color: #fff; 
+}
+
 .contact {
-  background-color: #dbecdf;
+  background-color: #0C8D1F;
+}
+
+.contact p, .contact h2, .contact-info {
+  color: #fff;
+}
+
+.contact-info i {
+  font-size: 1.5rem;
 }
 
 .contact-info {
@@ -536,6 +574,11 @@ footer .team {
   .dots {
     top: 280px;
   }
+
+  .contact-info i {
+    width: 9%;
+  }
+
 }
 
 
@@ -558,6 +601,9 @@ footer .team {
     width: 20%; 
   }
 
+  .contact-info i {
+    width: 7%;
+  }
 }
 
 
@@ -575,6 +621,10 @@ footer .team {
     height: 10%;
     margin: 0.6em;
   }
+  .contact-info i {
+    width: 5%;
+  }
+
 }
 
 
