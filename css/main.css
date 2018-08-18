@@ -120,6 +120,10 @@ header .mobile-menu {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: -1px;
+  z-index: 90;
+  max-width: 131px;
 }
 
 .menu {
@@ -146,13 +150,14 @@ header .mobile-menu {
 }
 
 .menu-desktop {
-  padding-top: 1em;
+  padding-top: 1.5em;
 }
 
 .menu-desktop a + p {
-  color: grey;
+  color: white;
   font-size: 0.8rem;
   text-align: center;
+  font-weight: 700;
 }
 
 .menu div button span {
@@ -164,7 +169,7 @@ header .mobile-menu {
   list-style: none;
   display: inline-block;
   float: right;
-  margin-top: 1.2em;
+  margin-top: 2.5em;
 }
 
 .menu ul li {
@@ -176,17 +181,16 @@ header .mobile-menu {
 }
 
 .menu ul li a {
-  color: #848688;
   text-decoration: none;
-
+  color: #848688;
 }
 
 .menu ul li:focus, .menu ul li:active{
   color: #848688;
 }
 
-.nav-item:hover{
-  color: #000;
+.menu ul li a:hover{
+  color: #0c8d1f;
   font-weight: 500;
 }
 /*
@@ -256,7 +260,7 @@ section.about {
 
 /*Porque ir*/
 .porque-ir {
-  border-top: 4px solid #f1d132;
+  /*border-top: 4px solid #f1d132;*/
 }
 .why-div {
   /* width: 80%; */
@@ -270,7 +274,7 @@ section.about {
 .why-div img {
   display: inline-block;
   border-radius: 50%;
-  width: 50%;
+  width: 60%;
 }
 
 /*
@@ -352,8 +356,14 @@ section.about {
   list-style: none;
 }
 
+.stands-list img {
+  max-width: 60%;
+  margin-bottom: 1em;
+  border-radius: 50%;
+}
+
 .stands-list {
-  margin-bottom: 4em;
+  margin-bottom: 3em;
 }
 
 /*
@@ -428,9 +438,9 @@ section.about {
   background-color: #0C8D1F;
   color: #ffeb83;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0.2em 1em;
-  border-radius: 7px;
+  border-radius: 20px;
   /* font-weight: 500; */
 }
 
@@ -563,6 +573,11 @@ footer .team {
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+    
+  .upper-nav ul {
+    padding-left: 180px;
+  }
+
   .mobile-main-button button {
     font-size: 1rem;
     padding: 0.2em 0.8em;
@@ -584,6 +599,7 @@ footer .team {
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
+
   .fecha-div {
     margin: 0 0.5em;
   }

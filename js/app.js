@@ -62,9 +62,9 @@ var minutes = Math.floor((distance % _hour) / _minute);
 var seconds = Math.floor((distance % _minute) / _second);
 
 //document.getElementById('countdown-mobile').innerHTML = 'Faltan ' + days + ' dias, ';
-//document.getElementById('countdown-mobile').innerHTML += hours + ' horas, ';
+//document.getElementById('countdown-mobile').innerHTML += hours + ' horas ';
 document.getElementById('countdown-desktop').innerHTML = 'Faltan ' + days + ' dias, ';
-document.getElementById('countdown-desktop').innerHTML += hours + ' horas, ';
+document.getElementById('countdown-desktop').innerHTML += hours + ' horas ';
 //document.getElementById('countdown').innerHTML += minutes + ' minutos y ';
 //document.getElementById('countdown').innerHTML += seconds + ' segundos';
 //}
