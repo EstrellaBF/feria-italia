@@ -38,7 +38,7 @@
 		<nav class="navbar mobile-menu navbar-expand-lg navbar-light  d-block d-sm-none d-none d-sm-block d-md-none">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
 			 aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+				<img class="img-fluid" src="assets/logos/hamburguer-italy.png" alt="">
 			</button>
 
 			<div class="mobile-main-button">
@@ -70,7 +70,7 @@
 
 					<li class="nav-item">
 						<!--<li class="nav-item active">-->
-						<a class="nav-link" href="#foodLink">Enogastronomía</a>
+						<a class="nav-link" data-toggle="modal" data-target="#enogastronomia">Enogastronomía</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Cultura y Arte</a>
@@ -113,7 +113,7 @@
 							</div>
 							<ul>
 								<li class="nav-item">
-									<a href="#foodLink">Enogastronomía</a>
+									<a data-toggle="modal" data-target="#enogastronomia">Enogastronomía</a>
 								</li>
 								<li>|</li>
 								<li class="nav-item">
@@ -135,6 +135,114 @@
 		</nav>
 		<!--desktop end -->
 	</header>
+
+<!-- Modal -->
+<div class="modal fade" id="enogastronomia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-body">
+
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			<section id="foodLink" class="Enogastronomia">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="text-center">
+								<h2>Enogastronomía</h2>
+								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+							<div class="text-center stands-list">
+								<img class="img-fluid" alt="" src="assets/images/vinos-1.png">
+								<h4>Vinos</h4>
+								<ul id="wine-list">
+									<li>Emp. Vino 1</li>
+									<li>Emp. Vino 2</li>
+									<li>Emp. Vino 3 </li>
+									<div class="collapse" id="whine-list-toggle">
+										<li>Emp. Vino 1</li>
+										<li>Emp. Vino 2</li>
+										<li>Emp. Vino 3 </li>
+									</div>
+								</ul>
+								<button class="see-more" type="button" data-toggle="collapse" data-target="#whine-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
+									<i class="fas fa-caret-down"></i>
+								</button>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+							<div class="text-center stands-list">
+								<img class="img-fluid" alt="" src="assets/images/italian-food-2.png">
+								<h4>Gastronomía</h4>
+								<ul id="food-list">
+									<li>Emp. Gastronomía1</li>
+									<li>Emp. Gastronomía2</li>
+									<li>Emp. Gastronomía3</li>
+									<div class="collapse" id="food-list-toggle">
+										<li>Emp. Gastronomía1</li>
+										<li>Emp. Gastronomía2</li>
+										<li>Emp. Gastronomía3</li>
+									</div>
+								</ul>
+								<button class="see-more" type="button" data-toggle="collapse" data-target="#food-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
+									<i class="fas fa-caret-down"></i>
+								</button>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+							<div class="text-center stands-list">
+								<img class="img-fluid" alt="" src="assets/images/tiramisu-chico.png">
+								<h4>Postres</h4>
+								<ul id="desserts-list">
+									<li>Emp. Postre1</li>
+									<li>Emp. Postre2</li>
+									<li>Emp. Postre3</li>
+									<div class="collapse" id="desserts-list-toggle">
+										<li>Emp. Postre3</li>
+										<li>Emp. Postre2</li>
+										<li>Emp. Postre3</li>
+									</div>
+								</ul>
+								<button class="see-more" type="button" data-toggle="collapse" data-target="#desserts-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
+									<i class="fas fa-caret-down"></i>
+								</button>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+							<div class="text-center stands-list">
+								<img class="img-fluid" alt="" src="assets/images/limoncello.png">
+								<h4>Bebidas</h4>
+								<ul id="beverage-list">
+									<li>Em. Bebida 1</li>
+									<li>Em. Bebida 2</li>
+									<li>Em. Bebida 3</li>
+									<div class="collapse" id="beverage-list-toggle">
+										<li>Em. Bebida 1</li>
+										<li>Em. Bebida 2</li>
+										<li>Em. Bebida 3</li>
+									</div>
+								</ul>
+								<button class="see-more" type="button" data-toggle="collapse" data-target="#beverage-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
+									<i class="fas fa-caret-down"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-success" data-dismiss="modal">Ok!</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
 	<main>
 		<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 			<div class="carousel-inner">
@@ -168,7 +276,7 @@
 		</div>
 	</main>
 	<!--Sobre la Feria-->
-	<section class="about">
+	<section class="about"  id="parallax">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -215,6 +323,8 @@
 			</div>
 		</div>
 	</section>
+	<div class="separador"></div>
+	
 
 	<!--Programa-->
 	<section class="programa">
@@ -249,96 +359,7 @@
 			</div>
 		</div>
 	</section>
-
-	<!--yenny - Enogastronomía-->
-	<section id="foodLink" class="Enogastronomia">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="text-center">
-						<h2>Enogastronomía</h2>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-					</div>
-				</div>
-				<div class="col-12 col-sm-6 col-md-6">
-					<div class="text-center stands-list">
-						<img class="img-fluid" alt="" src="assets/images/vinos-1.png">
-						<h4>Vinos</h4>
-						<ul id="wine-list">
-							<li>Emp. Vino 1</li>
-							<li>Emp. Vino 2</li>
-							<li>Emp. Vino 3 </li>
-							<div class="collapse" id="whine-list-toggle">
-								<li>Emp. Vino 1</li>
-								<li>Emp. Vino 2</li>
-								<li>Emp. Vino 3 </li>
-							</div>
-						</ul>
-						<button class="see-more" type="button" data-toggle="collapse" data-target="#whine-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
-							<i class="fas fa-caret-down"></i>
-						</button>
-					</div>
-				</div>
-				<div class="col-12 col-sm-6 col-md-6">
-					<div class="text-center stands-list">
-						<img class="img-fluid" alt="" src="assets/images/italian-food-2.png">
-						<h4>Gastronomía</h4>
-						<ul id="food-list">
-							<li>Emp. Gastronomía1</li>
-							<li>Emp. Gastronomía2</li>
-							<li>Emp. Gastronomía3</li>
-							<div class="collapse" id="food-list-toggle">
-								<li>Emp. Gastronomía1</li>
-								<li>Emp. Gastronomía2</li>
-								<li>Emp. Gastronomía3</li>
-							</div>
-						</ul>
-						<button class="see-more" type="button" data-toggle="collapse" data-target="#food-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
-							<i class="fas fa-caret-down"></i>
-						</button>
-					</div>
-				</div>
-				<div class="col-12 col-sm-6 col-md-6">
-					<div class="text-center stands-list">
-						<img class="img-fluid" alt="" src="assets/images/tiramisu-chico.png">
-						<h4>Postres</h4>
-						<ul id="desserts-list">
-							<li>Emp. Postre1</li>
-							<li>Emp. Postre2</li>
-							<li>Emp. Postre3</li>
-							<div class="collapse" id="desserts-list-toggle">
-								<li>Emp. Postre3</li>
-								<li>Emp. Postre2</li>
-								<li>Emp. Postre3</li>
-							</div>
-						</ul>
-						<button class="see-more" type="button" data-toggle="collapse" data-target="#desserts-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
-							<i class="fas fa-caret-down"></i>
-						</button>
-					</div>
-				</div>
-				<div class="col-12 col-sm-6 col-md-6">
-					<div class="text-center stands-list">
-						<img class="img-fluid" alt="" src="assets/images/limoncello.png">
-						<h4>Bebidas</h4>
-						<ul id="beverage-list">
-							<li>Em. Bebida 1</li>
-							<li>Em. Bebida 2</li>
-							<li>Em. Bebida 3</li>
-							<div class="collapse" id="beverage-list-toggle">
-								<li>Em. Bebida 1</li>
-								<li>Em. Bebida 2</li>
-								<li>Em. Bebida 3</li>
-							</div>
-						</ul>
-						<button class="see-more" type="button" data-toggle="collapse" data-target="#beverage-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
-							<i class="fas fa-caret-down"></i>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<div class="separador"></div>
 
 	<!--Porque ir-->
 	<section class="porque-ir">

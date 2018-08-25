@@ -39,8 +39,12 @@ h2, h3, h4 {
   font-weight: 400;
 }
 
-.about, .porque-ir, .programa, .Enogastronomia {
-  padding: 3em 0;
+.about, .porque-ir, .programa {
+  padding: 2.5em 0;
+}
+
+.enogastronomia {
+  padding-top: 1.5em;
 }
 
 .contact {
@@ -250,7 +254,7 @@ header .mobile-menu {
 
 /*Sobre la Feria*/
 section.about {
-  border-top: 4px solid #CB2F2F;
+  /*border-top: 4px solid #CB2F2F;*/
 } 
 
 
@@ -273,7 +277,6 @@ section.about {
 
 .why-div img {
   display: inline-block;
-  border-radius: 50%;
   width: 60%;
 }
 
@@ -291,7 +294,7 @@ section.about {
 
 /*programa*/
 .programa {
-  background-color: #027235;
+  background-color: #f7f7f7;
 }
 
 .programa-title {
@@ -299,11 +302,11 @@ section.about {
 }
 
 .programa-title p {
-  color: #fff;
+  /*color: #fff;*/
 }
 
 .programa h2, .programa h3{
-  color: #fff;
+  /*color: #fff;*/
 }
 
 .evento-div, .calendar, .croquis {
@@ -359,7 +362,6 @@ section.about {
 .stands-list img {
   max-width: 60%;
   margin-bottom: 1em;
-  border-radius: 50%;
 }
 
 .stands-list {
