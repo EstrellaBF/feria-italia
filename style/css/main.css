@@ -263,6 +263,7 @@ header .menu-desktop a + p {
 }
 
 .auspiciador {
+  padding-bottom: 5em;
   background-color: #f7f7f7;
 }
 .auspiciador .auspiciadores {
@@ -272,9 +273,9 @@ header .menu-desktop a + p {
   text-align: center;
 }
 .auspiciador .auspiciadores .sponsors-icons img {
-  width: 25%;
+  width: 23%;
   height: 10%;
-  margin: 0.6em;
+  margin: 0.9em;
   box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.19);
 }
 
@@ -377,6 +378,18 @@ footer .team {
     height: 410px;
   }
 
+  .about .about-div {
+    position: relative;
+    margin: 0 9em;
+  }
+
+  .auspiciador .auspiciadores .sponsors-icons img {
+    width: 20%;
+    height: 10%;
+    margin: 1.5em;
+    box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.19);
+  }
+
   .contact .contact-info i {
     width: 9%;
   }
@@ -395,8 +408,14 @@ footer .team {
     height: 500px;
   }
 
+  .about .about-div {
+    position: relative;
+    margin: 0px 12em;
+  }
+
   .auspiciador .auspiciadores .sponsors-icons img {
-    width: 20%;
+    width: 16%;
+    margin: 2em;
   }
 
   .contact .contact-info i {
@@ -413,10 +432,15 @@ footer .team {
     height: 700px;
   }
 
+  .about .about-div {
+    position: relative;
+    margin: 0px 20em;
+  }
+
   .auspiciador .auspiciadores .sponsors-icons img {
-    width: 15%;
+    width: 10%;
     height: 10%;
-    margin: 0.6em;
+    margin: 2em;
   }
 
   .contact .contact-info i {
