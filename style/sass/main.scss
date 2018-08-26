@@ -17,10 +17,14 @@
 }
   
   
-h2, h3, h4 {
+h1, h2, h3, h4 {
   font-family: 'Lucida Bright';
   font-style: italic;
   font-weight: 400;
+}
+
+h2 {
+	margin-bottom: 1em;
 }
   
 .about, .auspiciador, .programa {
@@ -209,17 +213,18 @@ header {
   }
 }
   
-//PARALLAX
+//PARALLAX  
+.paralsec {
+  background-image: url("../../assets/images/pisa-chico.jpg");
+}
+
 .paral {
   min-height: 600px;
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
 }
-  
-.paralsec {
-  background-image: url("../../assets/images/foto-parallax - copia.png");
-}
+
 	
 	
 //SOBRE LA FERIA
@@ -228,9 +233,24 @@ header {
 		margin-bottom: 2.5em;
 	}	
 	.about-div {
+		position: relative;
+    margin: 0 5em;
 		img {
-			display: inline-block;
-			width: 60%;
+    /* display: inline-block; */
+    filter: brightness(0.5);
+    /* width: 60%; */
+		position: relative;
+		margin-bottom: 3em;
+		}
+		p {
+			position: absolute;
+			top: 60px;
+			/* height: 100%; */
+			/* text-align: center; */
+			color: #fff;
+			font-size: 1.2rem;
+			padding: 0 1em;
+			line-height: 1.5;
 		}
 	}	
 }
@@ -246,14 +266,21 @@ header {
   }	
 	.evento-div {
 		margin-bottom: 3.5em;
-		p {
-			color: #fff;
-			font-size: 1.1rem;
-			margin-top: 1em;
+		.fecha-div {
+			margin: 0 5em;
+			p {
+				color: #000;
+				font-size: 1.1rem;
+				margin-top: 1em;
+			}			
 		}
+
 	}
 	.calendar {
-    margin-bottom: 3.5em;
+		margin-bottom: 3.5em;
+		.fecha-div {
+			margin: 0 5em;
+		}
 	}
 	.croquis {
     margin-bottom: 3.5em;
@@ -413,6 +440,9 @@ footer {
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
 
+	.paralsec {
+		background-image: url("../../assets/images/pisa.jpg");
+	}
 	.programa {
 		.fecha-div {
 			margin: 0 0.5em;

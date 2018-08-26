@@ -12,10 +12,14 @@
   font-family: "Roboto", sans-serif;
 }
 
-h2, h3, h4 {
+h1, h2, h3, h4 {
   font-family: "Lucida Bright";
   font-style: italic;
   font-weight: 400;
+}
+
+h2 {
+  margin-bottom: 1em;
 }
 
 .about, .auspiciador, .programa {
@@ -187,6 +191,10 @@ header .menu-desktop a + p {
   font-weight: 400;
 }
 
+.paralsec {
+  background-image: url("../../assets/images/pisa-chico.jpg");
+}
+
 .paral {
   min-height: 600px;
   background-attachment: fixed;
@@ -194,16 +202,29 @@ header .menu-desktop a + p {
   background-position: 50% 50%;
 }
 
-.paralsec {
-  background-image: url("../../assets/images/foto-parallax - copia.png");
-}
-
 .about .about-title {
   margin-bottom: 2.5em;
 }
+.about .about-div {
+  position: relative;
+  margin: 0 5em;
+}
 .about .about-div img {
-  display: inline-block;
-  width: 60%;
+  /* display: inline-block; */
+  filter: brightness(0.5);
+  /* width: 60%; */
+  position: relative;
+  margin-bottom: 3em;
+}
+.about .about-div p {
+  position: absolute;
+  top: 60px;
+  /* height: 100%; */
+  /* text-align: center; */
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0 1em;
+  line-height: 1.5;
 }
 
 .programa {
@@ -215,13 +236,19 @@ header .menu-desktop a + p {
 .programa .evento-div {
   margin-bottom: 3.5em;
 }
-.programa .evento-div p {
-  color: #fff;
+.programa .evento-div .fecha-div {
+  margin: 0 5em;
+}
+.programa .evento-div .fecha-div p {
+  color: #000;
   font-size: 1.1rem;
   margin-top: 1em;
 }
 .programa .calendar {
   margin-bottom: 3.5em;
+}
+.programa .calendar .fecha-div {
+  margin: 0 5em;
 }
 .programa .croquis {
   margin-bottom: 3.5em;
@@ -356,6 +383,10 @@ footer .team {
 }
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  .paralsec {
+    background-image: url("../../assets/images/pisa.jpg");
+  }
+
   .programa .fecha-div {
     margin: 0 0.5em;
   }
