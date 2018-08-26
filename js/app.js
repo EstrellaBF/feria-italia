@@ -9,6 +9,7 @@ let selectOption = function () {
   $(this).parent().parent().parent().find('button').html(selected + '&nbsp;<span class="caret"></span>');
 }
 
+new WOW().init();
 
 var sponsorsIcons = document.getElementById("sponsors-icons");
 var sponsorsDiv = document.getElementById("sponsors-div");

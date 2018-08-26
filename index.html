@@ -13,7 +13,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Alex+Brush|Bilbo+Swash+Caps" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="style/css/animate.css">
+	<link rel="stylesheet" href="style/css/main.css">
+
+	<!--js-->
+	<script src="js/wow.min.js"></script>
 </head>
 
 <body>
@@ -136,112 +140,112 @@
 		<!--desktop end -->
 	</header>
 
-<!-- Modal -->
-<div class="modal fade" id="enogastronomia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-	  <div class="modal-content">
-		<div class="modal-body">
+	<!-- Modal -->
+	<div class="modal fade" id="enogastronomia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
 
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
-			<section id="foodLink" class="Enogastronomia">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<div class="text-center">
-								<h2>Enogastronomía</h2>
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-							<div class="text-center stands-list">
-								<img class="img-fluid" alt="" src="assets/images/vinos-1.png">
-								<h4>Vinos</h4>
-								<ul id="wine-list">
-									<li>Emp. Vino 1</li>
-									<li>Emp. Vino 2</li>
-									<li>Emp. Vino 3 </li>
-									<div class="collapse" id="whine-list-toggle">
-										<li>Emp. Vino 1</li>
-										<li>Emp. Vino 2</li>
-										<li>Emp. Vino 3 </li>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<section id="foodLink" class="enogastronomia">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="text-center">
+										<h2>Enogastronomía</h2>
+										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
 									</div>
-								</ul>
-								<button class="see-more" type="button" data-toggle="collapse" data-target="#whine-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
-									<i class="fas fa-caret-down"></i>
-								</button>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-							<div class="text-center stands-list">
-								<img class="img-fluid" alt="" src="assets/images/italian-food-2.png">
-								<h4>Gastronomía</h4>
-								<ul id="food-list">
-									<li>Emp. Gastronomía1</li>
-									<li>Emp. Gastronomía2</li>
-									<li>Emp. Gastronomía3</li>
-									<div class="collapse" id="food-list-toggle">
-										<li>Emp. Gastronomía1</li>
-										<li>Emp. Gastronomía2</li>
-										<li>Emp. Gastronomía3</li>
+								</div>
+								<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+									<div class="text-center stands-list">
+										<img class="img-fluid" alt="" src="assets/images/vinos-1.png">
+										<h4>Vinos</h4>
+										<ul id="wine-list">
+											<li>Emp. Vino 1</li>
+											<li>Emp. Vino 2</li>
+											<li>Emp. Vino 3 </li>
+											<div class="collapse" id="whine-list-toggle">
+												<li>Emp. Vino 1</li>
+												<li>Emp. Vino 2</li>
+												<li>Emp. Vino 3 </li>
+											</div>
+										</ul>
+										<button class="see-more" type="button" data-toggle="collapse" data-target="#whine-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
+											<i class="fas fa-caret-down"></i>
+										</button>
 									</div>
-								</ul>
-								<button class="see-more" type="button" data-toggle="collapse" data-target="#food-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
-									<i class="fas fa-caret-down"></i>
-								</button>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-							<div class="text-center stands-list">
-								<img class="img-fluid" alt="" src="assets/images/tiramisu-chico.png">
-								<h4>Postres</h4>
-								<ul id="desserts-list">
-									<li>Emp. Postre1</li>
-									<li>Emp. Postre2</li>
-									<li>Emp. Postre3</li>
-									<div class="collapse" id="desserts-list-toggle">
-										<li>Emp. Postre3</li>
-										<li>Emp. Postre2</li>
-										<li>Emp. Postre3</li>
+								</div>
+								<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+									<div class="text-center stands-list">
+										<img class="img-fluid" alt="" src="assets/images/italian-food-2.png">
+										<h4>Gastronomía</h4>
+										<ul id="food-list">
+											<li>Emp. Gastronomía1</li>
+											<li>Emp. Gastronomía2</li>
+											<li>Emp. Gastronomía3</li>
+											<div class="collapse" id="food-list-toggle">
+												<li>Emp. Gastronomía1</li>
+												<li>Emp. Gastronomía2</li>
+												<li>Emp. Gastronomía3</li>
+											</div>
+										</ul>
+										<button class="see-more" type="button" data-toggle="collapse" data-target="#food-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
+											<i class="fas fa-caret-down"></i>
+										</button>
 									</div>
-								</ul>
-								<button class="see-more" type="button" data-toggle="collapse" data-target="#desserts-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
-									<i class="fas fa-caret-down"></i>
-								</button>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-							<div class="text-center stands-list">
-								<img class="img-fluid" alt="" src="assets/images/limoncello.png">
-								<h4>Bebidas</h4>
-								<ul id="beverage-list">
-									<li>Em. Bebida 1</li>
-									<li>Em. Bebida 2</li>
-									<li>Em. Bebida 3</li>
-									<div class="collapse" id="beverage-list-toggle">
-										<li>Em. Bebida 1</li>
-										<li>Em. Bebida 2</li>
-										<li>Em. Bebida 3</li>
+								</div>
+								<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+									<div class="text-center stands-list">
+										<img class="img-fluid" alt="" src="assets/images/tiramisu-chico.png">
+										<h4>Postres</h4>
+										<ul id="desserts-list">
+											<li>Emp. Postre1</li>
+											<li>Emp. Postre2</li>
+											<li>Emp. Postre3</li>
+											<div class="collapse" id="desserts-list-toggle">
+												<li>Emp. Postre3</li>
+												<li>Emp. Postre2</li>
+												<li>Emp. Postre3</li>
+											</div>
+										</ul>
+										<button class="see-more" type="button" data-toggle="collapse" data-target="#desserts-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
+											<i class="fas fa-caret-down"></i>
+										</button>
 									</div>
-								</ul>
-								<button class="see-more" type="button" data-toggle="collapse" data-target="#beverage-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
-									<i class="fas fa-caret-down"></i>
-								</button>
+								</div>
+								<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+									<div class="text-center stands-list">
+										<img class="img-fluid" alt="" src="assets/images/limoncello.png">
+										<h4>Bebidas</h4>
+										<ul id="beverage-list">
+											<li>Em. Bebida 1</li>
+											<li>Em. Bebida 2</li>
+											<li>Em. Bebida 3</li>
+											<div class="collapse" id="beverage-list-toggle">
+												<li>Em. Bebida 1</li>
+												<li>Em. Bebida 2</li>
+												<li>Em. Bebida 3</li>
+											</div>
+										</ul>
+										<button class="see-more" type="button" data-toggle="collapse" data-target="#beverage-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
+											<i class="fas fa-caret-down"></i>
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
+					</section>
+
+
 				</div>
-			</section>
-
-
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Ok!</button>
+				</div>
+			</div>
 		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn btn-success" data-dismiss="modal">Ok!</button>
-		</div>
-	  </div>
 	</div>
-  </div>
 
 	<main>
 		<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
@@ -276,18 +280,87 @@
 		</div>
 	</main>
 	<!--Sobre la Feria-->
-	<section class="about"  id="parallax">
+	<section class="about paral paralsec" id="parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 about-title text-center wow animated bounceInDown">
+					<h2>Feria Piazza Italia</h2>
+					<p>La cámara de comercio de Lima - CCL y la Associazione Piazza Italiana organizan por 1era vez en el Perú la FERIA PIAZZA
+						ITALIA 2018.
+					</p>
+				</div>
+
+				<div class="col-12">
+					<div class="text-center about-div">
+						<h2>¿Porqué participar?</h2>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3">
+					<div class="text-center about-div wow animated zoomInDown ">
+						<img class="img-fluid" alt="" src="assets/images/brindando-vino.png">
+						<p>Diviértete </p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3">
+					<div class="text-center about-div wow animated zoomInDown ">
+						<img class="img-fluid" alt="" src="assets/images/famila-italiana.png">
+						<p>Pasa un momento en familia</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3">
+					<div class="text-center about-div wow animated zoomInDown ">
+						<img class="img-fluid" alt="" src="assets/images/feria_de_negocios.png">
+						<p>Aumenta la visibilidad de tu negocio</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 wow animated zoomInDown ">
+					<div class="text-center about-div">
+						<img class="img-fluid" alt="" src="assets/images/cash-register.png">
+						<p>Aumenta tus ingresos</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<div class="separador"></div>
+
+
+	<!--Programa-->
+	<section class="programa paral paralsec">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+					<div class="text-center calendar">
+						<h3>Fecha</h3>
+						<div class="fecha-div">
+							<img class="img-fluid" alt="" src="assets/images/1-Fechas.png">
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+					<div class="text-center evento-div">
+						<h3>Evento</h3>
+						<img class="img-fluid" alt="" src="assets/images/casa-prado-noche.png">
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+					<div class="text-center croquis">
+						<h3>Croquis</h3>
+						<div class="text-center" id="map"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="separador"></div>
+
+	<!--AUSPICIADOR-->
+	<section class="auspiciador">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="text-center about-title">
-						<h2>La primera feria italiana</h2>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim aspernatur hic exercitationem aut eligendi id quia fugiat
-							cupiditate numquam, voluptates blanditiis sequi repellendus modi nostrum assumenda officiis? Inventore, quas et!</p>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="text-center auspiciadores">
+					<div class="text-center auspiciadores wow animated bounceInDown">
 						<h3>Auspiciadores</h3>
 						<div class="sponsors-icons" id="sponsors-icons">
 							<a target="_blank" href="http://apavitperu.org/">
@@ -323,81 +396,7 @@
 			</div>
 		</div>
 	</section>
-	<div class="separador"></div>
-	
 
-	<!--Programa-->
-	<section class="programa">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 programa-title text-center">
-					<h2>Feria Piazza Italia</h2>
-					<p>La cámara de comercio de Lima - CCL y la Associazione Piazza Italiana organizan por 1era vez en el Perú la FERIA PIAZZA
-						ITALIA 2018.
-					</p>
-				</div>
-				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
-					<div class="text-center calendar">
-						<h3>Fecha</h3>
-						<div class="fecha-div">
-							<img class="img-fluid" alt="" src="assets/images/1-Fechas.png">
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
-					<div class="text-center evento-div">
-						<h3>Evento</h3>
-						<img class="img-fluid" alt="" src="assets/images/casa-prado-noche.png">
-					</div>
-				</div>
-				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
-					<div class="text-center croquis">
-						<h3>Croquis</h3>
-						<div class="text-center" id="map"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<div class="separador"></div>
-
-	<!--Porque ir-->
-	<section class="porque-ir">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="text-center why-div">
-						<h2>¿Porqué participar?</h2>
-					</div>
-				</div>
-				<div class="col-12 col-sm-6 col-md-3">
-					<div class="text-center why-div">
-						<img class="img-fluid" alt="" src="assets/images/brindando-vino.png">
-						<p>Diviértete </p>
-					</div>
-				</div>
-				<div class="col-12 col-sm-6 col-md-3">
-					<div class="text-center why-div">
-						<img class="img-fluid" alt="" src="assets/images/famila-italiana.png">
-						<p>Pasa un momento en familia</p>
-					</div>
-				</div>
-				<div class="col-12 col-sm-6 col-md-3">
-					<div class="text-center why-div">
-						<img class="img-fluid" alt="" src="assets/images/feria_de_negocios.png">
-						<p>Aumenta la visibilidad de tu negocio</p>
-					</div>
-				</div>
-				<div class="col-12 col-sm-6 col-md-3">
-					<div class="text-center why-div">
-						<img class="img-fluid" alt="" src="assets/images/cash-register.png">
-						<p>Aumenta tus ingresos</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
 	<!--Contáctanos-->
 	<section class="contact">
 		<div class="container">
@@ -446,7 +445,7 @@
 				<div class="col-12">
 					<div class="arrow">
 						<a class="" href="#top">
-							<i class="fas fa-angle-down"></i>
+							<i class="fas fa-angle-up"></i>
 						</a>
 					</div>
 				</div>

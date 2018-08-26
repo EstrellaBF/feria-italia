@@ -39,7 +39,7 @@ h2, h3, h4 {
   font-weight: 400;
 }
 
-.about, .porque-ir, .programa {
+.about, .auspiciador, .programa {
   padding: 2.5em 0;
 }
 
@@ -250,6 +250,19 @@ header .mobile-menu {
   width: 25%;
   height: 10%;
   margin: 0.6em;
+  box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.19);
+}
+
+/*Parallax*/
+.paral {
+  min-height: 600px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.paralsec {
+  background-image: url("../assets/images/foto-parallax - copia.png");
 }
 
 /*Sobre la Feria*/
@@ -262,9 +275,10 @@ section.about {
   margin-top: 2.5em;
 }
 
-/*Porque ir*/
-.porque-ir {
+/*Auspiciador*/
+.auspiciador {
   /*border-top: 4px solid #f1d132;*/
+  background-color: #f7f7f7;
 }
 .why-div {
   /* width: 80%; */
@@ -275,7 +289,7 @@ section.about {
   list-style: none;
 }
 
-.why-div img {
+.why-div img, .about-div img {
   display: inline-block;
   width: 60%;
 }

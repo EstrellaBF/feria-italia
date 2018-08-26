@@ -1,0 +1,494 @@
+@font-face {
+  font-family: 'Lucida Bright';
+  src: url('LucidaBright-Italic.eot');
+  src: url('LucidaBright-Italic.eot?#iefix') format('embedded-opentype'),
+      url('LucidaBright-Italic.woff2') format('woff2'),
+      url('LucidaBright-Italic.woff') format('woff'),
+      url('LucidaBright-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+  
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+  
+  
+h2, h3, h4 {
+  font-family: 'Lucida Bright';
+  font-style: italic;
+  font-weight: 400;
+}
+  
+.about, .auspiciador, .programa {
+  padding: 2.5em 0;
+}
+	
+//MENUS
+.enogastronomia {
+	padding-top: 1.5em;
+	.stands-list {
+    margin-bottom: 3em;
+		img {
+				max-width: 60%;
+				margin-bottom: 1em;
+			}		
+		ul {
+			list-style: none;
+		}
+		.see-more {
+			background-color: #0C8D1F;
+			color: #ffeb83;
+			border: none;
+			font-size: 1rem;
+			padding: 0.2em 1em;
+			border-radius: 20px;
+			/* font-weight: 500; */
+		}		
+	}
+}
+
+
+//HEADER
+header {
+	.upper-nav {
+		background-color: #000;
+		color: #fff;
+		border-top: 4px solid #0C963F;
+		padding: 0.2em;
+		font-size: 0.9rem;
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			margin-bottom: 0;
+			li {
+				display: inline-block;
+				text-decoration: none;
+			}
+		}
+	}
+
+	nav{
+    background-color: #fff;
+	}
+
+	.mobile-menu {
+    padding-top: 1.2em;
+		padding-bottom: 1.2em;
+		.mobile-main-button {
+			display: inline;
+			button {
+				background-color: #fff;
+				border: none;
+				border-radius: 0.2em;
+				color: #5f5f5f;
+				cursor: pointer;
+				float: right;
+				font-size: 0.9rem;
+				font-weight: 500;
+				margin-right: 0.3em;
+				margin-top: 0.5em;
+				padding: 0 0.4em;
+				-webkit-box-shadow: 6px 5px 10px -7px rgba(47, 44, 44, 0.65);
+					-moz-box-shadow: 6px 5px 10px -7px rgba(47, 44, 44, 0.65);
+					box-shadow: 6px 5px 10px -7px rgba(47, 44, 44, 0.65);
+			}
+		}		
+	}
+	
+  .logo {
+    display: inline-block;
+  }
+
+  .logo-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -1px;
+    z-index: 90;
+    max-width: 131px;
+  }
+
+  .menu {
+    float: right;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+		align-items: flex-end;
+		div {
+			float: right;
+			button{
+				background-color: #0c8d1f;
+				border: none;
+				color: #fff;
+				font-size: 0.9rem;
+				padding: 0.3em 1.5em 0.3em 0.9em;
+				border-radius: 0.2em;
+				cursor: pointer;
+				span {
+					margin-left: 0.8em;
+					vertical-align: text-bottom;
+				}
+			}
+		}
+
+		ul {
+			list-style: none;
+			display: inline-block;
+			float: right;
+			margin-top: 2.5em;
+			li {
+				color: #848688 !important;
+				display: inline-block;
+				font-size: 1rem;
+				margin-left: 0.5em;
+				cursor: pointer;
+				a {
+					text-decoration: none;
+					color: #848688;
+				}
+				a:hover{
+					color: #0c8d1f;
+					font-weight: 500;
+				}
+			}
+			li:active{
+				color: #848688;
+			}
+			li:focus {
+				color: #848688;
+			}
+		}
+
+  }
+
+  .menu-desktop {
+		padding-top: 1.5em;
+		 a + p {
+			color: white;
+			font-size: 0.8rem;
+			text-align: center;
+			font-weight: 700;
+		}
+  }
+}
+
+  
+//CAROUSEL
+.carousel-item{ 
+	img {
+		height: 260px;
+	}
+  .carousel-caption {
+    position: absolute;
+    /* right: 15%; */
+    bottom: 90px;
+    left: 0%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    /* outline: 1px solid red; */
+    width: 100%;
+    /* opacity: 5; */
+		background-color: #50505066;
+		h3 {
+			font-family: 'Lucida Bright';
+			font-style: italic;
+			font-weight: 400;
+		}
+  }
+}
+  
+//PARALLAX
+.paral {
+  min-height: 600px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+  
+.paralsec {
+  background-image: url("../../assets/images/foto-parallax - copia.png");
+}
+	
+	
+//SOBRE LA FERIA
+.about {
+	.about-title {
+		margin-bottom: 2.5em;
+	}	
+	.about-div {
+		img {
+			display: inline-block;
+			width: 60%;
+		}
+	}	
+}
+
+
+//PROGRAMA
+.programa {
+	background-color: #f7f7f7;
+  .fecha-div {
+		h4{
+			margin: 0;
+		}
+  }	
+	.evento-div {
+		margin-bottom: 3.5em;
+		p {
+			color: #fff;
+			font-size: 1.1rem;
+			margin-top: 1em;
+		}
+	}
+	.calendar {
+    margin-bottom: 3.5em;
+	}
+	.croquis {
+    margin-bottom: 3.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+		align-items: center;
+		#map {
+			height: 238px;
+			width: 260px;
+		}		
+	}
+}
+  
+  
+//AUSPICIADOR 
+.auspiciador {
+	background-color: #f7f7f7;
+	.auspiciadores {
+		margin-top: 2.5em;
+		.sponsors-icons {
+			text-align: center;
+			img {
+				width: 25%;
+				height: 10%;
+				margin: 0.6em;
+				box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.19);
+			}
+		}	
+	}  	
+}
+ 
+
+//CONTACTO
+.contact {
+	background-color: #0C8D1F;
+  padding-top: 2em;
+  padding-bottom: 2em;
+	p {
+		color: #fff;
+	}
+	h2 {
+		color: #fff;
+	}
+  .register-info {
+		padding: 0.2em 2em;
+		p {
+			font-size: 1.1rem;
+			i {
+					margin-right: 1em;
+				}				
+		}
+		input {
+			background-color: #0C8D1F;
+			border: none;
+			border-bottom: 2px solid #fff;
+			color:#fff;
+			font-size: 1.1rem;
+			width: 100%;
+		}
+		input::-webkit-input-placeholder { 
+			color: #fff; 
+		}
+		input::-moz-placeholder { 
+			color: #fff; 
+		}
+		input::-ms-input-placeholder { 
+			color: #fff; 
+		}
+	}
+  .contactanos-div {
+    margin-top: 3em;
+  }	
+	.contact-info {
+		color: #fff;
+    padding: 0.2em 2em;
+		i {
+				font-size: 1.5rem;
+   			width: 12%;
+			}		
+		span {
+			font-size: 1.1rem;
+		}			
+	}
+  .arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+		margin-top: 2rem;
+		i {
+			font-size: 3rem;
+			color: #f1f1f1;
+		}
+  }
+}
+ 
+  
+//FOOTER
+footer {
+  background-color: #000;
+  color: #fff;
+  height: 70px;
+  display: flex;
+	align-items: center;
+	.social-network {
+		float: left !important;
+		i {
+			background-color: #fff;
+			color: #000;
+			border-radius: 100%;
+			padding: 3px;
+			width: 20px;
+			text-align: center;
+		}			
+	}	
+	.team {
+		float: right !important;
+	}
+}
+  
+  /* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	header {
+		.upper-nav {
+			ul {
+				padding-left: 180px;
+			}					
+		}		
+		.mobile-menu {
+			.mobile-main-button {
+				button {
+					font-size: 1rem;
+					padding: 0.2em 0.8em;
+				} 			
+			}			
+		}
+	}
+    
+	.carousel-item {
+		img {
+			height: 410px;
+		}		
+	}
+
+	.contact {
+		.contact-info {
+			i {
+				width: 9%;
+			}				
+		}
+	}
+
+}
+  
+  
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+	.programa {
+		.fecha-div {
+			margin: 0 0.5em;
+		}		
+	}
+
+	.carousel-item {
+		img {
+			height: 500px;
+		}			
+	}
+	
+	.auspiciador {
+		.auspiciadores {
+			.sponsors-icons {
+				img {
+    			width: 20%; 
+				}
+			}	
+		}  	
+	}
+	
+	.contact {
+		.contact-info {
+			i {
+				width: 7%;
+			}				
+		}
+	}
+
+}
+  
+  
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+  .logo img {
+    width: 100px;
+	}
+	
+  .carousel-item {
+		img {
+			height: 700px;
+		}			
+	} 
+	
+	.auspiciador {
+		.auspiciadores {
+			.sponsors-icons {
+				img {
+					width: 15%;
+					height: 10%;
+					margin: 0.6em;
+				}
+			}	
+		}  	
+	}
+		
+	.contact {
+		.contact-info {
+			i {
+				width: 5%;
+			}				
+		}
+	}
+  
+}
+  
+  
+@media (min-width: 1200px) {
+  /*HEADER*/
+  .carousel-item {
+		img {
+			height: 700px;
+		}			
+	} 
+}
+  
+  
